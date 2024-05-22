@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('fonts/ABCMonumentGrotesk-Regular.otf');
+}
+
+body {
+  font-family: 'Monument Grotesk';
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+
+  height: 5rem;
+  padding: 1.5 1.5rem;
+
+  background-color: transparent;
+
+  font-size: 1.4rem;
+
+  z-index: 100;
+}
+
+header a:hover {
+  color: #c5c5c5;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+.hover-title {
+  display: inline;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hover-image {
+  visibility: hidden;
+}
+
+body .hover-title:hover+.hover-image {
+  visibility: visible;
+}
+
+.hover-image {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+}
+
+.hover-image img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin-bottom: 0;
+}
+
+.home .animated-heading {
+  padding: 0 1.5rem;
+  margin: 0 0;
+  border: 0;
+  height: 50rem;
+  
+  font-size: 16vw;
+  line-height: 90%;
+}
+
+
+.home .intro{
+  position: relative;
+}
+.home .home-image {
+  position: absolute;
+  top: -5.5rem;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+.home .home-image img{
+  width: 100%;
+}
+
+
+.gradient {
+  margin-top: 12rem;
+  height: 6rem;
+}
+
+.home .gradient {
+  background: linear-gradient(#ffffff, #c5c5c5);
+}
+
+.home .home-content {
+  background-color: #c5c5c5;
+}
+
+.home footer {
+  background-color: #c5c5c5;
+}
+
+.container-fluid {
+  padding: 0 1.5rem;
+}
+
+.about-description {
+  font-size: 2.2rem;
+}
+
+.about-description p+p {
+  margin-top: 1rem;
+}
+
+.hover-title {
+display: flex;
+}
+
+.accordion-button:hover {
+  cursor: pointer;
+  color: #c5c5c5;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem 0;
+}
+
+.accordion-content p+p {
+  margin-top: 1rem;
+}
+
+.accordion-content .accordion-image {
+  display: flex;
+  width: 30vw;
+  height: 30vh;
+  margin-top: 1rem;
+}
+
+.accordion-content .accordion-image img+img {
+  margin-left: 1rem;
+}
+
+footer {
+  height: 2rem;
+  padding: 0 1.5rem;
+
+}
+
